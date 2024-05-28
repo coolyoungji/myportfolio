@@ -204,9 +204,9 @@ gsap.set('.index__about',{
  
 
 
- gsap.set('.about__wrap',{
-    y:0,
-});
+//  gsap.set('.about__wrap',{
+//     y:0,
+// });
 const t6 = gsap.timeline({
  
     scrollTrigger:{
@@ -219,6 +219,19 @@ const t6 = gsap.timeline({
         // markers: true
     }
 });
+
+
+let test = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.about_txt', //트리거 요소
+        start: '20% 20%', // 트리거 요소 상단이 보이는 영역 상단에 닿을 때
+        //start: '50px top', // 트리거 요소 상단에서 50px위치가 보이는 영역 상단에 닿을 때
+        pin: true, //트리거 요소 고정
+        end: '+=1500', // 고정된후 1500px만큼 더 스크롤한 후 고정이 해제됨
+		scrub:2, //스크롤에 따른 애니메이션의 부드러움 정도
+    }
+});
+
 
 
 
