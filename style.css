@@ -155,7 +155,6 @@ border: 2px solid var(--basic-color-black);
 .skills__con ul li p {text-align: left;}
 .skills__con ul li img { width:100px;}
 .skills__con ul li:last-of-type {text-align: left;}
-.skills__con ul li:last-of-type img {width: 80px;}
 .skills__con ul li span {margin-left: 10px;}
 
 .skills__wrap {margin-right: 8%; margin-bottom: 10%;}
