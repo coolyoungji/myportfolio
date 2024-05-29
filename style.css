@@ -175,12 +175,11 @@ border: 2px solid var(--basic-color-black);
 #footer .inner .footer__con img {width: 250px;}
 #footer .inner .sitemap ul { width: 300px; }
 #footer .inner .sitemap ul li a{ font-size: 5rem; }
+#footer .inner .footer__con .contact h2 {font-size: 5rem; border-bottom: 2px solid var(--basic-color-black);}
 #footer .inner .footer__con .contact dl {margin-top: 2rem;}
-#footer .inner .footer__con .contact dl dt {font-weight: 800;}
-#footer .inner .footer__con .contact p {display: block}
-#footer .inner .footer__con .contact p img {width: 80px;}
-
-
+#footer .inner .footer__con .contact dl dt {font-weight: 500; font-size: 2rem; letter-spacing: -1px; margin-bottom: 5px;}
+#footer .inner .footer__con .ico__git { margin-top: 15px; text-align: center; font-size: 1.5rem; letter-spacing: -2px;}
+#footer .inner .footer__con .ico__git img {width: 80px;}
 
 
 /* 레이어 팝업 */
