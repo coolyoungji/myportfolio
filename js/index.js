@@ -8,14 +8,6 @@ gsap.set('.visual__title span, .index__publishing__text', {
 })
 
 
-
-
-// gsap.set('.visual__images img',{
-//     opacity:0,
-//     y:gsap.utils.random(100, 50)
-// })
-
-
 gsap.set('index__publishing img',{
     scale:1.3
 })
@@ -32,14 +24,6 @@ t1.to('visual__title div',{
     scale:1.3,
     stagger:0.1
 })
-// }).to('.visual__images img',{
-//     opacity:1,
-//     y:0,
-//     ease:'power3.out',
-//     duration:2,
-//     stagger:0.04
-// },0.5)
-
 
 
 const texts = document.querySelectorAll('.text__effect p');
@@ -205,9 +189,6 @@ gsap.set('.index__about',{
  
 
 
-//  gsap.set('.about__wrap',{
-//     y:0,
-// });
 const t6 = gsap.timeline({
  
     scrollTrigger:{
@@ -228,7 +209,7 @@ let test = gsap.timeline({
         start: '20% 20%', // 트리거 요소 상단이 보이는 영역 상단에 닿을 때
         //start: '50px top', // 트리거 요소 상단에서 50px위치가 보이는 영역 상단에 닿을 때
         pin: true, //트리거 요소 고정
-        end: '+=1000', // 고정된후 1500px만큼 더 스크롤한 후 고정이 해제됨
+        end: '+=1300', // 고정된후 1500px만큼 더 스크롤한 후 고정이 해제됨
 		scrub:1, //스크롤에 따른 애니메이션의 부드러움 정도
     }
 });
