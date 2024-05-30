@@ -193,9 +193,9 @@ const t6 = gsap.timeline({
 let test = gsap.timeline({
     scrollTrigger: {
         trigger: '.about_txt', 
-        start: '20% 20%', 
+        start: '0% 20%', 
         pin: true, 
-        end: '+=1800',
+        end: '+=1500',
 		scrub:1, 
     }
 });
