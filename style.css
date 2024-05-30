@@ -3,7 +3,6 @@ body{font-family:"Roboto Mono", monospace;}
 html,body { height:100%; }
 body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
 html { scroll-behavior:smooth; }
-/* h1,h2,h3,h4 { font-size:16px; } */
 ul,li,ol { list-style:none; }
 img,fieldset,iframe { border:0; }
 table { border-collapse:collapse; }
@@ -28,21 +27,18 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .inner { width: 80%; margin: 0 auto; }
 
 
-/* layout */
+/* header */
 #header { position: fixed; top: 20px; left: 0; width: 100%;  z-index: 999; }
 #header .inner { display: flex; align-items: center; justify-content:space-between; }
-#header .inner nav ul{ display: flex;  align-items: center; justify-content: end; }
-#visual { width: 100vw; height: 100vh; margin-left: 10%; margin-top: 40vh; }
-
-
-/* header */
-#header .inner .logo { width: 120px; height: 100px; }
-#header .inner .logo a { background: url(images/logo.png) no-repeat; display: block; width: 100%; height: 100%; background-size: contain; }
+#header .inner nav ul { display: flex; align-items: center; justify-content: space-between; }
+#header .inner .logo { width: 100px; }
+#header .inner .logo a img { width: 100%; }
 #header .inner nav ul li a { display: inline-block; width: 95px; }
 #header .inner p { margin-left: 80px; font-weight: 600; }
 
 
 /* visual */
+#visual { width: 100vw; height: 100vh; margin-left: 10%; margin-top: 40vh; }
 #visual .visual__title { mix-blend-mode: difference; color: #fff; 
     font-size: 8vw; font-weight: 700; white-space: nowrap;}
 #visual .visual__title div { display: flex; align-items:center; gap: 1rem; }
@@ -50,8 +46,6 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 #visual .visual__title div:last-of-type span { font-family: "Pinyon Script", cursive; font-size: 11vw; letter-spacing: 5px; margin-top: 50px; }
 #visual svg {position: absolute; right:10%; top: 0; width: 100vw; height: 100vh; z-index: -1; }
 
-
-/* #visual img { position: absolute; object-fit: contain; z-index: -55; scale: 0.5;} */
 
 .v1 { animation: visualMotion 4s infinite ease-in-out ; animation-direction: alternate; } 
 @keyframes visualMotion {
@@ -236,3 +230,46 @@ border: 2px solid var(--basic-color-black);
 
     .publishing__con .con__tilte {position: relative; left: 0%; top: 0; opacity: 0; transition: 1s; }
     .publishing__con .con__tilte.on {left: 10%; opacity: 1;}
+
+
+
+
+
+
+
+/* 스마트폰 */
+    @media all and (max-width:767px) { 
+
+        body {border: 2px dashed red;}
+
+        #header .inner { width: 90%; justify-content: space-between}
+        #header .inner p {margin-left: 0;}
+        #header .inner p { display: inline;}
+        /* #header .inner {display: inline-block;} */
+        #header .inner nav ul {justify-content: flex-end;}
+        #header .inner nav ul li a.on {text-align: center;}
+
+        .index__publishing__text, .index__design__text, .index__about__text {
+            font-size: 5vw;
+        }
+
+
+        .publising__wrap ul.publishing__con li {flex-direction: column;}
+        .publising__wrap ul.publishing__con li {width: 100%;}
+
+
+
+    }
+
+/* 태블릿 */
+    @media all and (min-width:768px) and (max-width:1023px) { /* 태블릿 */
+
+
+
+    }
+
+
+/* PC */
+    @media all and (min-width:1024px) { 
+
+    }
