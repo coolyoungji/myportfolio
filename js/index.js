@@ -132,12 +132,7 @@ const t4 = gsap.timeline({
 
         });
 
-
-        gsap.set('.design__wrap',{
-            y:0,
-        })
         gsap.set('.design__wrap li',{
-            // opacity:0,
             y: 500,
         })
         
@@ -148,18 +143,13 @@ const t4 = gsap.timeline({
        
             scrollTrigger: {
                 trigger: ".design__wrap",
-                start: "0 50%", // the default values
+                start: "0 0%", // the default values
                 end:"+=2000",
                 scrub: 2,
                 // pin:true,   
             }, 
         });
 
-
-gsap.set('.index__about',{
-    y:0,
- })
- 
  
  const t5 = gsap.timeline({
  
@@ -196,64 +186,24 @@ const t6 = gsap.timeline({
         start:'top top',
         end: '+=1500',
         scrub:true,
-        // pin:true,
-        //markers: true,//개발가이드선
-        // markers: true
     }
 });
 
 
 let test = gsap.timeline({
     scrollTrigger: {
-        trigger: '.about_txt', //트리거 요소
-        start: '20% 20%', // 트리거 요소 상단이 보이는 영역 상단에 닿을 때
-        //start: '50px top', // 트리거 요소 상단에서 50px위치가 보이는 영역 상단에 닿을 때
-        pin: true, //트리거 요소 고정
-        end: '+=1300', // 고정된후 1500px만큼 더 스크롤한 후 고정이 해제됨
-		scrub:1, //스크롤에 따른 애니메이션의 부드러움 정도
+        trigger: '.about_txt', 
+        start: '20% 20%', 
+        pin: true, 
+        end: '+=1800',
+		scrub:1, 
     }
 });
 
 
-
-
-
-
-
-	///////////// 작품 클릭했을때 팝업(모달) ///////////////
-	const menu = document.querySelectorAll(".menu");
-	const pop = document.querySelectorAll(".pop");
-	const close = document.querySelectorAll(".close");
-	const body = document.querySelector("body");
-
-
-	menu.forEach(function(menu){
-
-		menu.addEventListener("click",function(){ 
-			this.nextElementSibling.style.display="block";
-			body.style.overflow="hidden";
-		});	
-
-	});
-
-
-	close.forEach(function(close){ 
-			close.addEventListener("click",function(e){
-				e.preventDefault();
-
-				pop.forEach(function(pop){
-					pop.style.display="none";
-				})
-
-				body.style.overflow="auto";
-			});
-
-	})
-
-
 /* 마우스 커서 */
 var cursor = document.querySelector(".cursor"); 
-var publisingWrap = document.querySelectorAll(".publishing__con"); //프로젝트 전체 영역
+var publisingWrap = document.querySelectorAll(".con__sum"); //프로젝트 전체 영역
 
 function cursorEvent(e){
 
@@ -344,19 +294,22 @@ headerScroll();// 헤더 이벤트
 
 
 
-let sumHover = document.querySelector(".con__sum");
-let contilte = document.querySelector(".con__tilte");
+let sumHover = document.querySelectorAll(".con__sum");
+let contilte = document.querySelectorAll(".con__tilte");
 
 function hover(){
 
-    
-    sumHover.addEventListener("mouseenter",()=>{
-        contilte.classList.add("on");
-    });
+    sumHover.forEach(function(sum,index){
+        sum.addEventListener("mouseenter",()=>{
 
-    sumHover.addEventListener("mouseleave",()=>{
-        contilte.classList.remove("on");
-    });
+            contilte[index].classList.add("on");
+        });
+    
+        sum.addEventListener("mouseleave",()=>{
+            contilte[index].classList.remove("on");
+        });
+    })
+
     
 }
 
