@@ -341,3 +341,24 @@ function headerScroll(){
 headerScroll();// 헤더 이벤트
 
 
+
+
+
+let sumHover = document.querySelector(".con__sum");
+let contilte = document.querySelector(".con__tilte");
+
+function hover(){
+
+    
+    sumHover.addEventListener("mouseenter",()=>{
+        contilte.classList.add("on");
+    });
+
+    sumHover.addEventListener("mouseleave",()=>{
+        contilte.classList.remove("on");
+    });
+    
+}
+
+
+setInterval(hover,10);
