@@ -111,7 +111,7 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .about_txt div strong span { margin-left: 10px; font-size: 1rem;}
 .about_txt div p:first-of-type { margin-top: 20px; }
 .about_txt div p {margin-bottom: 10px;}
-.about_txt .about__career p>em { margin-bottom: 10px; font-size: 1.5rem; font-style: normal; font-weight: 700; border-bottom: 3px solid var(--basic-color-black);}
+.about_txt .about__career h3>em { margin-bottom: 10px; font-size: 1.5rem; font-style: normal; font-weight: 700; border-bottom: 3px solid var(--basic-color-black);}
 .about_txt .about__career p>span { margin-right: 10px; color: var(--point-color); font-weight: 800;}
 .skills__con ul {display: flex; flex-direction:column; align-items: flex-end;}
 .skills__con ul li { width: 40%; margin-bottom: 30px; padding: 1rem; text-align: center; border-radius: 30px;
@@ -120,8 +120,7 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
                  -7px -7px 14px #fff;
 }
 .skills__con ul li:first-child { background: none; box-shadow: none; }
-.skills__con ul li:first-child p {font-size: 3rem; letter-spacing: -2px; border-bottom: 3px solid var(--basic-color-black);}
-.skills__con ul li p {text-align: left;}
+.skills__con ul li h3 { border-bottom: 3px solid var(--basic-color-black);font-size: 3rem; letter-spacing: -2px; text-align: left; }
 .skills__con ul li img { width:100px;}
 .skills__con ul li:last-of-type {text-align: left;}
 .skills__con ul li span {margin-left: 10px;}
