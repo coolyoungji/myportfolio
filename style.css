@@ -12,8 +12,6 @@ i {font-style: normal;}
 
 body { margin: 0 auto; background-color: #f5f5f5;  }
 .blind {position:absolute; left:0; top:-99999px;}
-.skip_navigation a { position:absolute; left:0px; top:-9999px; }
-.skip_navigation a:focus { position:static; display:block; background-color:black; text-align:center;color:white; padding:5px;}
 a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 
 :root{
@@ -45,14 +43,11 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 #visual .visual__title div span {letter-spacing: -5px;}
 #visual .visual__title div:last-of-type span { font-family: "Pinyon Script", cursive; font-size: 11vw; letter-spacing: 5px; margin-top: 50px; }
 #visual svg {position: absolute; right:10%; top: 0; width: 100vw; height: 100vh; z-index: -1; }
-
-
 .v1 { animation: visualMotion 4s infinite ease-in-out ; animation-direction: alternate; } 
 @keyframes visualMotion {
 	0% { stroke-dashoffset:750; }
 	100% { stroke-dashoffset:0; }
 }
-
 .visual__bg { 
     position: absolute;
     right:calc((100% - 600px)/2);
@@ -63,32 +58,18 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
     background: linear-gradient(225deg, #d1d1d1, #f8f8f8);
     box-shadow:  -20px 20px 40px #9e9e9e,
                  20px -20px 40px #fff;
-    
 }
-
 .index__publishing .text__block {position: relative; }
 .index__publishing .text__block .text__container .text__effect { margin-top: 10rem; text-align: center; font-size: 1.5rem; }
 .index__publishing .text__block .text__container .text__effect p { letter-spacing: -2px; margin-bottom: 2px; font-weight: 500;}
 
 
-
 /* index style */
-.index__publishing, .index__design, .index__about  { position: relative; height: 100vh; width: 100%; overflow: hidden;
-    clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%); 
-}
-  
-
-
-.index__publishing img, .index__design img, .index__about img { position: absolute; inset: 0; object-fit: cover; width: 100%; height: 100%;   transform: translateY(-60%);  
- }
-
+.index__publishing, .index__design, .index__about  { position: relative; height: 100vh; width: 100%; overflow: hidden; clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%); }
+.index__publishing img, .index__design img, .index__about img { position: absolute; inset: 0; object-fit: cover; width: 100%; height: 100%;   transform: translateY(-60%);}
 .index__publishing__overlay, .index__design__overlay, .index__about__overlay{ position: absolute; inset: 0; z-index: 2; background: url(images/note.png)no-repeat center center; background-size: contain; opacity: 0; background-color: #000; }
-
 .index__publishing__text, .index__design__text, .index__about__text{
  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3; color: rgb(0, 0, 0);  font-size: 4rem; opacity: 0; }
-
-
-
 
 
 /* publishing */
@@ -103,8 +84,6 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .publising__wrap .publising__title li:last-of-type { width: 100%; text-align: right;}
 .publishing__con .con__tilte {margin-top: 5%;}
 .publishing__con .con__tilte span {padding: 0.5rem 1rem; margin-right: 5px; background-color: var(--basic-color-black); color: #fff;}
-
-
 .publising__wrap ul.publishing__tab { display: flex; justify-content:space-between; }
 .publising__wrap ul.publishing__tab li a{ display: block; line-height:30px; text-align: center; font-size: 1.2rem; letter-spacing: -1px; border-bottom: 2px solid var(--basic-color-black);   }
 .publishing__con li { position: relative; overflow: hidden; }
@@ -112,11 +91,7 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .publishing__con li:hover .con_logo { top:0; }
 
 
-
-
-
 /* design */
-
 .design__wrap ul {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
 .design__wrap ul li { width: 48%; }
 .design__wrap ul li:hover img {scale: 1.1; }
@@ -128,46 +103,31 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .design__wrap .project__num { font-size: 2rem; }
 
 
-
 /* about */
 .about__wrap {width: 80%; margin: 0 auto; height: 100vh; margin-top: 10%;}
-
-.about__con .about_txt .profile__img img {width: 300px;  border-radius:50%;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-
-    
-                box-shadow: -8px 8px;
-border: 2px solid var(--basic-color-black);
-        }
+.about__con .about_txt .profile__img img {width: 300px;  border-radius:50%; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); box-shadow: -8px 8px; border: 2px solid var(--basic-color-black);}
 .about_txt { margin-left: 50px;}
 .about_txt div strong { font-size: 3rem; letter-spacing: -1px; }
 .about_txt div strong span { margin-left: 10px; font-size: 1rem;}
 .about_txt div p:first-of-type { margin-top: 20px; }
 .about_txt div p {margin-bottom: 10px;}
-
 .skills__con ul {display: flex; flex-direction:column; align-items: flex-end;}
 .skills__con ul li { width: 40%; margin-bottom: 30px; padding: 1rem; text-align: center; border-radius: 30px;
     background: #fff;
     box-shadow:  7px 7px 14px #e8e8e8,
                  -7px -7px 14px #fff;
 }
-
 .skills__con ul li:first-child { background: none; box-shadow: none; }
 .skills__con ul li:first-child p {font-size: 3rem; letter-spacing: -2px; border-bottom: 3px solid var(--basic-color-black);}
-
 .skills__con ul li p {text-align: left;}
 .skills__con ul li img { width:100px;}
 .skills__con ul li:last-of-type {text-align: left;}
 .skills__con ul li span {margin-left: 10px;}
-
 .skills__wrap {margin-right: 8%; margin-bottom: 10%;}
-
 .skills__item p:first-of-type{font-size: 2.5rem; letter-spacing: -2px; margin-bottom: 10px; border-bottom: 2px solid var(--basic-color-black); }
 .skills__item p span { margin-right: 10px; font-size: 1.5rem; font-weight: 500; color: var(--point-color); letter-spacing: -2px;}
 .skills__con ul li:last-of-type p {font-size: 1rem;}
-
 .skills__item.icon {display: flex; align-items: center; justify-content: flex-start; text-align: left;}
-
 
 
 /* footer */
@@ -188,44 +148,14 @@ border: 2px solid var(--basic-color-black);
 #footer .top_icon img {width: 100%; height: 100%;opacity: 0.8; }
 
 
-/* 레이어 팝업 */
-	.pop {
-		display:none;
-		position:fixed;
-		left:0px; top:0px;
-		width:100%; 
-        padding-top: 3rem;
-		background-color:rgba(37, 37, 37, 0.9);
-		z-index:3000;
-		overflow-x:scroll;
-	}
-    
-	.pop .in { position: relative; margin:0 auto; width:80%; height:100vh; background: url(images/pop_note.png)no-repeat; background-size: contain; padding: 5rem; }
-
-    .pop .pop_txt {display: flex; flex-wrap: wrap;}
-    .pop .pop_txt dt { margin: 10px 0; border-bottom: 2px solid var(--basic-color-black); font-size: 1.5vw; font-weight: 800; letter-spacing: -2px; }
-    .pop_txt .pop_img {width: 49%; margin-right: 2px;}
-    .pop_txt dl {width: 50%;}
-    .publising__title p { font-size: 1.5vw; margin-bottom:28px; border-bottom: 2px solid var(--basic-color-black);}
-    .pop .publising__title .site__link::before {content: ''; position: absolute; left: 0; top:5px; background: url(images/link.svg)no-repeat; background-size: contain; width: 30px; height: 30px;}
-    .pop .publising__title .site__link:hover { color: var(--point-color); }
-
-	.close { position:absolute; right:50px; top:50px; }
-    .publishing__con .pop .ion-close-round:before {scale: 3; color: #fff;}
-
-/* 마우스 커서 style */
-    .cursor { position:fixed; z-index:1000; transform:translate(-50%, -50%); pointer-events:none}
-    .cursor .bg { position:absolute; left:-52px; top:-52px;transform:scale(0);
+/* js style */
+.cursor { position:fixed; z-index:1000; transform:translate(-50%, -50%); pointer-events:none}
+.cursor .bg { position:absolute; left:-52px; top:-52px;transform:scale(0);
         width:105px;height:105px; border-radius:50%;font-size:15px;font-weight:600;text-align:center;line-height:105px;color:#fff; background:var(--basic-color-black); transition:all .4s ease-in-out;}
-    .cursor.on .bg{opacity:1;transform:scale(1)}
+.cursor.on .bg{opacity:1;transform:scale(1)}
 
+#header.on {top: 0; background-color: #000; color: #fff; }
+#header nav li a.on {color: #fff;}
 
-
-    #header.on {top: 0; background-color: #000; color: #fff; }
-    #header nav li a.on {color: #fff;}
-
-    .publishing__con .con__tilte {position: relative; left: 0%; top: 0; opacity: 0; transition: 1s; }
-    .publishing__con .con__tilte.on {left: 10%; opacity: 1;}
-
-
-
+.publishing__con .con__tilte {position: relative; left: 0%; top: 0; opacity: 0; transition: 1s; }
+.publishing__con .con__tilte.on {left: 10%; opacity: 1;}
