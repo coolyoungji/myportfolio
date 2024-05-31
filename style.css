@@ -77,8 +77,8 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .publising__wrap ul.publishing__con { display: flex; flex-wrap: wrap; justify-content:space-between; margin-top: 5%; }
 .publising__wrap ul.publishing__con li { width: 50%  }
 .publising__wrap ul.publishing__inner__wrap li { width: 100%; }
-.publising__wrap ul li strong { display: block; padding-bottom: 40px; font-size: 3vw;}
-.publising__wrap ul li strong img {width: 80%;}
+.publising__wrap ul li h3 { display: block; padding-bottom: 40px; font-size: 3vw;}
+.publising__wrap ul li h3 img {width: 80%;}
 .publising__wrap ul li img { width: 100%; }
 .publising__wrap .publising__title { display: flex; justify-content: space-between; font-size: 2vw; font-weight: 500; letter-spacing: -1PX; }
 .publising__wrap .publising__title li:last-of-type { width: 100%; text-align: right;}
