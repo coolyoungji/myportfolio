@@ -158,6 +158,7 @@ let test = gsap.timeline({
 //마우스 커서 이벤트
 var cursor = document.querySelector(".cursor"); 
 var publisingWrap = document.querySelectorAll(".con__sum"); //프로젝트 전체 영역
+var designWrap = document.querySelectorAll(".design__wrap"); //디자인 영역
 
 function cursorEvent(e){
     cursor.style.top = e.pageY - scrollY + "px";
@@ -166,8 +167,21 @@ function cursorEvent(e){
 
 window.addEventListener('mousemove', cursorEvent);
 
+//퍼블리싱 프로젝트
 publisingWrap.forEach(link =>{
     if ( link !== publisingWrap ){
+        link.addEventListener("mouseleave", () => {
+            cursor.classList.remove("on");
+        });
+        link.addEventListener("mouseover", () => {
+            cursor.classList.add("on");
+        });
+    }  
+});
+
+//디자인 프로젝트
+designWrap.forEach(link =>{
+    if ( link !== designWrap ){
         link.addEventListener("mouseleave", () => {
             cursor.classList.remove("on");
         });
