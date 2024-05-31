@@ -183,6 +183,9 @@ border: 2px solid var(--basic-color-black);
 #footer .inner .footer__con .contact dl dt {font-weight: 500; font-size: 2rem; letter-spacing: -1px; margin-bottom: 5px;}
 #footer .inner .footer__con .ico__git { margin-top: 15px; text-align: center; font-size: 1.5rem; letter-spacing: -2px;}
 #footer .inner .footer__con .ico__git img {width: 80px;}
+#footer .top_icon {position: fixed; right: 30px; bottom: 50px; width: 40px; height:40px; background-color:rgb(255, 255, 255,0.5); border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; z-index: 20;}
+#footer .top_icon:hover {background-color: var(--point-color); border-radius: 50px; }
+#footer .top_icon img {width: 100%; height: 100%;opacity: 0.8; }
 
 
 /* 레이어 팝업 */
@@ -217,13 +220,6 @@ border: 2px solid var(--basic-color-black);
     .cursor.on .bg{opacity:1;transform:scale(1)}
 
 
-/* 텝메뉴 style */
-    .publising__wrap ul.publishing__tab li a.on {color: var(--point-color); border: 3px; font-size: 3rem; transition: 0.8s;}
-    .publising__wrap ul.publishing__con {display: none;}
-    .publising__wrap ul.publishing__con.on {display: flex;}
-
-
-
 
     #header.on {top: 0; background-color: #000; color: #fff; }
     #header nav li a.on {color: #fff;}
@@ -233,43 +229,3 @@ border: 2px solid var(--basic-color-black);
 
 
 
-
-
-
-
-/* 스마트폰 */
-    @media all and (max-width:767px) { 
-
-        body {border: 2px dashed red;}
-
-        #header .inner { width: 90%; justify-content: space-between}
-        #header .inner p {margin-left: 0;}
-        #header .inner p { display: inline;}
-        /* #header .inner {display: inline-block;} */
-        #header .inner nav ul {justify-content: flex-end;}
-        #header .inner nav ul li a.on {text-align: center;}
-
-        .index__publishing__text, .index__design__text, .index__about__text {
-            font-size: 5vw;
-        }
-
-
-        .publising__wrap ul.publishing__con li {flex-direction: column;}
-        .publising__wrap ul.publishing__con li {width: 100%;}
-
-
-
-    }
-
-/* 태블릿 */
-    @media all and (min-width:768px) and (max-width:1023px) { /* 태블릿 */
-
-
-
-    }
-
-
-/* PC */
-    @media all and (min-width:1024px) { 
-
-    }
