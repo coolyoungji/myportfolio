@@ -95,7 +95,7 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .design__wrap ul {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
 .design__wrap ul li { width: 48%; }
 .design__wrap ul li:hover img {scale: 1.1; }
-.design__wrap ul li img {width: 100%; transition: 0.3s ease-in; }
+.design__wrap ul li img {width: 100%; transition: 0.3s ease-in; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
 .design__wrap ul li:nth-child(5) img {width: 80%; }
 .design__wrap ul li:nth-child(6) img {width: 80%; }
 .design__wrap li p { font-size: 3rem; letter-spacing: -3px; }
