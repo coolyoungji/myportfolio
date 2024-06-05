@@ -3,6 +3,8 @@
 .kyobo__bg { background:url(./images/mok.png)no-repeat center center;  background-size: 80%; background-attachment: fixed; padding: 200px 0; }
 
 .rareraw__bg {background:url(./images/mockup_rareraw_2.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
+#rw_wrap .project__link ul {justify-content: center; gap: 4rem;}
+#rw_wrap .project__link li {width: 30%;}
 
 .tousles__bg {background:url(./images/mockup_tj0.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
 .tousles__bg .project__title {color: #186b4f;}
@@ -45,11 +47,20 @@
     0% { width:0%}
     100% { width:50%; }
 }
+@keyframes progresRW {
+    0% { width:0%}
+    100% { width:80%; }
+}
 
    .bar .graph .fill { width:100%; height:100%;  background:var(--point-color); color: #fff; animation: bar 1s;animation-iteration-count : 1;}
 
     /* 교보문고 진행바 style */
    .bar .graph .kb { width:70%; animation: progressKB 1s;}
+
+   /* 레어로우 진행바 style */
+   .rw__item .bar .graph .fill {background: #75fb4c; color: #222; font-weight: 800;}
+   .rw__item  .bar .graph .rw { width:80%; animation: progresRW 1s; }
+
 
    /* 뚜레쥬르 진행바 style */
    .tj__item .bar .graph .fill {background: #186b4f;}
