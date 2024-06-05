@@ -4,9 +4,12 @@
 
 .rareraw__bg {background:url(./images/mockup_rareraw_2.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
 
+.tousles__bg {background:url(./images/mockup_tj0.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
+.tousles__bg .project__title {color: #186b4f;}
+.tousles__bg .site__link {background-color: #f0a037;}
 
 /* commo0n */
-.site__link { display: block; width:100%; background-color: var(--basic-color-black); color: #fff; padding: 1rem; border-radius: 30px; text-align: center; margin-top: 1rem;}
+.site__link { display: block; width:100%; background-color: var(--basic-color-black); color: #fff; padding: 1rem; border-radius: 30px; font-size: 1.5rem; text-align: center; margin-top: 1rem;}
 .site__link:hover {background-color: var(--point-color); color: #fff; transition: 0.5s;}
 
 
@@ -45,10 +48,14 @@
 
    .bar .graph .fill { width:100%; height:100%;  background:var(--point-color); color: #fff; animation: bar 1s;animation-iteration-count : 1;}
 
+    /* 교보문고 진행바 style */
    .bar .graph .kb { width:70%; animation: progressKB 1s;}
-   .bar .graph .tj { width:50%; animation: progressTJ 1s;}
 
-  dl dt {font-size: 1.3rem; padding-bottom: 5px; font-weight:600;}
+   /* 뚜레쥬르 진행바 style */
+   .tj__item .bar .graph .fill {background: #186b4f;}
+   .tj__item  .bar .graph .tj { width:50%; animation: progressTJ 1s; }
+
+  dl dt {padding-bottom: 5px; font-size: 1.3rem; font-weight:600; letter-spacing: -2px;}
 
 
 
