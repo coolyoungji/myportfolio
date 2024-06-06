@@ -182,9 +182,6 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 
 
 /* layer popup */
-.pop {
-
-}
 .pop .in { margin:0 auto; width:1314px; height:2000px; border:10px dashed #333; }
 
 
