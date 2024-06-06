@@ -245,3 +245,44 @@ function hover(){
     }) 
 }
 setInterval(hover,10);
+
+
+
+	// 작품 클릭했을때 팝업(모달)
+	const menu = document.querySelectorAll(".menu");
+	const pop = document.querySelectorAll(".pop");
+	const close = document.querySelectorAll(".close");
+	const body = document.querySelector("body");
+
+
+	menu.forEach(function(menu,index){
+
+		menu.addEventListener("click",function(){ //각각의 menu클릭했을때
+
+            // if (menu[index] == pop[index]){
+            //     pop[index].classList.add("on");
+            // }
+
+            this.nextElementSibling.style.display="block"
+			
+			//클릭한 이 menu의 다음형제인 pop을 보이게함
+
+			body.style.overflow="scroll"; //body스크롤없앰
+		});	
+
+	});
+
+
+	close.forEach(function(close){ 
+
+			close.addEventListener("click",function(e){// 각각의 close클릭했을때
+				e.preventDefault();
+
+				pop.forEach(function(pop){
+					pop.style.display="none"; //팝업 다 안보이게함
+				})
+
+				body.style.overflow="auto"; //body스크롤 생김
+			});
+
+	})
