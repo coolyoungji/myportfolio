@@ -182,19 +182,44 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 
 
 /* layer popup */
-.pop .in { margin:0 auto; width:1314px; height:2000px; border:10px dashed #333; }
+.pop .in { width: 1200px; height: 3000px; margin: 0 auto; margin-top: 5%; letter-spacing: -2px; }
 
-
-.close { position:fixed; right:30px; top:30px; background:red; }
+.close {position:fixed; right:5%; top:30px;}
+.ion-close:before {  scale: 3; }
 
 
 .design__wrap ul li {position: relative;}
 .design__wrap ul li.pop {
     display:none;
     position:fixed;
-    left:0px; top:-65%;
+    left:0px; top:-40%;
     width:100%; height:100vh;
-    background-color:rgba(204,204,204,0.8);
+    background-color:#fff;
     z-index:3000;
     overflow:auto;
 }
+
+
+
+#wrap {width: 1200px; margin: 0 auto; margin-top: 5%; letter-spacing: -2px;}
+.mockup { position: relative; width: 80%; margin: 0 auto;}
+.mockup .item { position: absolute; left: 50%; top:15.8%; transform: translateX(-50%); width: 567px; height: 323px; overflow-y: scroll;  }
+.mockup .item::-webkit-scrollbar {
+    width: 10px;
+}
+.mockup .item::-webkit-scrollbar-track { 
+    background-color: rgb(180, 180, 180);
+}
+.mockup .item::-webkit-scrollbar-thumb { 
+    background-color: rgb(58, 166, 255);
+}
+.mockup .item::-webkit-scrollbar-button {
+    display: none;
+}
+.mockup .item img{width: 100%; height: fit-content;}
+.mockup img {width: 100%;}
+
+header h1 {border-bottom: 2px solid #222;}
+.tool {width: 50px;}
+header h2 {display: inline;}
+header span {margin-left: 20px; font-size: 1.5rem; color: #20a2ad; font-weight: 800; letter-spacing: -1px;}

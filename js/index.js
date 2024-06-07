@@ -257,17 +257,13 @@ setInterval(hover,10);
 
 	menu.forEach(function(menu,index){
 
-		menu.addEventListener("click",function(){ //각각의 menu클릭했을때
-
-            // if (menu[index] == pop[index]){
-            //     pop[index].classList.add("on");
-            // }
+		menu.addEventListener("click",function(){ 
 
             this.nextElementSibling.style.display="block"
 			
-			//클릭한 이 menu의 다음형제인 pop을 보이게함
+		
 
-			body.style.overflow="scroll"; //body스크롤없앰
+			body.style.overflow="hidden"; //body스크롤없앰
 		});	
 
 	});
@@ -275,14 +271,14 @@ setInterval(hover,10);
 
 	close.forEach(function(close){ 
 
-			close.addEventListener("click",function(e){// 각각의 close클릭했을때
+			close.addEventListener("click",function(e){
 				e.preventDefault();
 
 				pop.forEach(function(pop){
-					pop.style.display="none"; //팝업 다 안보이게함
+					pop.style.display="none";
 				})
 
-				body.style.overflow="auto"; //body스크롤 생김
+				body.style.overflow="auto";
 			});
 
 	})
