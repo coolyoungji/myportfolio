@@ -89,45 +89,45 @@
     </div>
 
     <script>
-        // 헤더 이벤트
+    // 헤더 이벤트
 
-const header = document.querySelector("#header");
-const gnb = document.querySelectorAll("#header nav li a");
+    const header = document.querySelector("#header");
+    const gnb = document.querySelectorAll("#header nav li a");
 
-function headerScroll(){
-    window.addEventListener("scroll",()=>{
+    function headerScroll(){
+        window.addEventListener("scroll",()=>{
+            
+            let headerTop = 0;
+            let scrollPosition = window.scrollY;
         
-        let headerTop = 0;
-        let scrollPosition = window.scrollY;
-      
-        // document.querySelector("#tt").innerText = scrollPosition;//스크롤값 출력
+            // document.querySelector("#tt").innerText = scrollPosition;//스크롤값 출력
 
-        if (scrollPosition > headerTop){
-            header.classList.add("on");
-            header.style.transition="0.2s ease-in";
-            document.querySelector('.logo').style.display="none"; 
+            if (scrollPosition > headerTop){
+                header.classList.add("on");
+                header.style.transition="0.2s ease-in";
+                document.querySelector('.logo').style.display="none"; 
 
-            gnb.forEach((e)=>{
-                for(e=0;e<3;e++){
-                gnb[e].classList.add("on");
-                }
-            });
+                gnb.forEach((e)=>{
+                    for(e=0;e<3;e++){
+                    gnb[e].classList.add("on");
+                    }
+                });
 
-        }else if (scrollPosition <= headerTop){
-            header.classList.remove("on");
-            document.querySelector('.logo').style.display="block";
+            }else if (scrollPosition <= headerTop){
+                header.classList.remove("on");
+                document.querySelector('.logo').style.display="block";
 
-            gnb.forEach((e)=>{
-                for(e=0;e<3;e++){
-                gnb[e].classList.remove("on");
-                }
-            });
-        }
-    });
-}
+                gnb.forEach((e)=>{
+                    for(e=0;e<3;e++){
+                    gnb[e].classList.remove("on");
+                    }
+                });
+            }
+        });
+    }
 
 
-headerScroll();// 헤더 이벤트
+    headerScroll();// 헤더 이벤트
     </script>
     
 </body>

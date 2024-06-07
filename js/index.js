@@ -255,15 +255,15 @@ setInterval(hover,10);
 	const body = document.querySelector("body");
 
 
-	menu.forEach(function(menu,index){
+	menu.forEach(function(menu){
 
 		menu.addEventListener("click",function(){ 
 
-            this.nextElementSibling.style.display="block"
-			
+            let idx = this.getAttribute("data-idx");
+             
+            pop[idx].style.display="block";
 		
-
-			body.style.overflow="hidden"; //body스크롤없앰
+			body.style.overflow="hidden";
 		});	
 
 	});
