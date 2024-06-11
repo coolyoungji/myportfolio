@@ -85,7 +85,7 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 .publising__wrap .publising__title { display: flex; justify-content: space-between; font-size: 2vw; font-weight: 500; letter-spacing: -1PX; }
 .publising__wrap .publising__title li:last-of-type { width: 100%; text-align: right;}
 .publishing__con .con__tilte {margin-top: 5%;}
-.publishing__con .con__tilte span {padding: 0.5rem 1rem; margin-right: 5px; background-color: var(--basic-color-black); color: #fff;}
+.publishing__con .con__tilte span {padding: 0.5rem; margin-right: 5px; background-color: var(--basic-color-black); color: #fff;}
 .publising__wrap ul.publishing__tab { display: flex; justify-content:space-between; }
 .publising__wrap ul.publishing__tab li a{ display: block; line-height:30px; text-align: center; font-size: 1.2rem; letter-spacing: -1px; border-bottom: 2px solid var(--basic-color-black);   }
 .publishing__con li { position: relative; overflow: hidden; }
@@ -176,8 +176,8 @@ a:hover {color: var(--point-color); font-weight: 900; transition: 0.3s;}
 #header.on {top: 0; background-color: #000; color: #fff; }
 #header nav li a.on {color: #fff;}
 
-.publishing__con .con__tilte {position: relative; left: 0%; top: 0; opacity: 0; transition: 1s; }
-.publishing__con .con__tilte.on {left: 10%; opacity: 1;}
+.publishing__con .con__tilte {position: relative; left: 10%; top: 0; opacity: 1; transition: 1s; }
+.publishing__con .con__tilte.on {left: 50%; opacity: 0;}
 
 
 
