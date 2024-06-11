@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sub__projectpage.css">
+    <!-- 웹 아이콘   http://ionicons.com/v2 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>에어비앤비 리액트 프로젝트</title>
+
+</head>
+<body>
+    <div id="rw_wrap">
+        <header id="header" >
+            <div class="inner">
+
+        
+                <h1 class="logo" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
+                    <a href="#header"><img src="images/logo.png" alt="jjy로고"></a>
+                </h1>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700">Jiyeong's Portfolio</p>
+                <h2 class="blind">주요메뉴</h2>
+                <nav data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                    <ul>
+                        <li><a href="./index.html#home">Home</a></li>
+                        <li><a href="./index.html#projects">Projects</a></li>
+                        <li><a href="./index.html#about">About (me)</a></li>
+                    </ul>
+                </nav>
+        
+
+            </div>
+        </header>
+
+        <main id="main" class="airbnb__bg">
+            <div class="inner">
+    
+                <div class="project__title">
+                    <h2>
+                        에어비앤비<br>
+                        React.js <br>
+                        웹퍼블리싱
+                    </h2>
+                    <a class="site__link" target="_blank" href="http://superji0.dothome.co.kr/airbnb">사이트 링크 바로가기</a>
+            
+                </div>
+
+
+                <div class="project__item ab__item">
+                    <dl>
+                        <dt>사용툴</dt>
+                        <dd> 
+                            <img src="images/html5.png" alt="html5">
+                            <img src="images/Css3.png" alt="css3">
+                            <img src="images/react.png" alt="react">
+                        </dd>
+                        <dt>디자인</dt>
+                        <dd class="bar">
+                            <div class="graph"><div class="fill">개인 100%</div></div>
+                        </dd>
+                        <dt>퍼블리싱</dt>
+                        <dd class="bar">
+                            <div class="graph"><div class="fill">개인 100%</div></div>
+                        </dd>
+                        <dt>리액트 활용</dt>
+                        <dd class="bar">
+                            <div class="graph"><div class="fill">개인 100%</div></div>
+                        </dd>
+                    </dl>
+                    <a target="_blank" href="https://github.com/superji0/react_airbnb_study">배포: Github 바로가기 </a>
+                </div>
+                
+            </div>
+        </main>
+
+        <section class="project__link inner">
+
+            <p>컴포넌트를 만들어 랜더링 하였으며 Router-Dom을 이용 하여 각 페이지별 데이터를 분리하였습니다.</p> 
+
+            <ul>
+                <li>
+                    <img src="./images/airbnb_01.png" alt="에어비앤비 메인페이지">
+                    <a  target="_blank" href="http://superji0.dothome.co.kr/airbnb" class="site__link">메인페이지 바로보기</a> 
+                </li>
+                <li>
+                    <img src="./images/airbnb_02.png" alt="에어비앤비 서브페이지">
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+    // 헤더 이벤트
+
+    const header = document.querySelector("#header");
+    const gnb = document.querySelectorAll("#header nav li a");
+
+    function headerScroll(){
+        window.addEventListener("scroll",()=>{
+            
+            let headerTop = 0;
+            let scrollPosition = window.scrollY;
+        
+            // document.querySelector("#tt").innerText = scrollPosition;//스크롤값 출력
+
+            if (scrollPosition > headerTop){
+                header.classList.add("on");
+                header.style.transition="0.2s ease-in";
+                document.querySelector('.logo').style.display="none"; 
+
+                gnb.forEach((e)=>{
+                    for(e=0;e<3;e++){
+                    gnb[e].classList.add("on");
+                    }
+                });
+
+            }else if (scrollPosition <= headerTop){
+                header.classList.remove("on");
+                document.querySelector('.logo').style.display="block";
+
+                gnb.forEach((e)=>{
+                    for(e=0;e<3;e++){
+                    gnb[e].classList.remove("on");
+                    }
+                });
+            }
+        });
+    }
+
+
+    headerScroll();// 헤더 이벤트
+    </script>
+    
+</body>
+</html>

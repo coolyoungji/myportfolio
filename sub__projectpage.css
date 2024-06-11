@@ -10,6 +10,8 @@
 .tousles__bg .project__title {color: #186b4f;}
 .tousles__bg .site__link {background-color: #f0a037;}
 
+.airbnb__bg {background:url(./images/mockup_airbnb3.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
+
 /* commo0n */
 .site__link { display: block; width:100%; background-color: var(--basic-color-black); color: #fff; padding: 1rem; border-radius: 30px; font-size: 1.5rem; text-align: center; margin-top: 1rem;}
 .site__link:hover {background-color: var(--point-color); color: #fff; transition: 0.5s;}
@@ -68,6 +70,10 @@
 
   dl dt {padding-bottom: 5px; font-size: 1.3rem; font-weight:600; letter-spacing: -2px;}
 
+  /* 에어비앤비 style */
+  .ab__item a { display: inline-block; border: 2px solid #222; border-radius: 10px; padding: 5px 10px; margin-top: 10px;}
+
 
 
   .project__visual img {width: 100%;}
+  .project__link p {padding-top: 5%; text-align: center;}
