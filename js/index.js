@@ -6,9 +6,7 @@ gsap.set('.visual__title span, .index__publishing__text', {
     opacity:0,
 })
 
-gsap.set('index__publishing img',{
-    scale:1.3
-})
+
 
 //비주얼 텍스트 설정
 const t1 = gsap.timeline();
