@@ -6,9 +6,9 @@
 #rw_wrap .project__link ul {justify-content: center; gap: 4rem;}
 #rw_wrap .project__link li {width: 30%;}
 
-.tousles__bg {background:url(./images/mockup_tj0.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
-.tousles__bg .project__title {color: #186b4f;}
-.tousles__bg .site__link {background-color: #f0a037;}
+.samsung__bg {background:url(./images/samsung_mokup.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
+.samsung__bg .project__title {color: #278AFF;}
+.samsung__bg .site__link {background-color: #278AFF;}
 
 .airbnb__bg {background:url(./images/mockup_airbnb3.png)no-repeat center center;  background-size: 60%; background-attachment: fixed; padding: 200px 0; }
 
@@ -18,7 +18,7 @@
 
 
 #main .inner { display: flex; justify-content: space-between;  }
-#main h2 {font-size: 5vw;}
+#main h2 {font-size: 5vw; letter-spacing: -7px;}
 
 #main .project__title {width: 30%;}
 #main .project__item {width: 40%; margin-top: 20%; background-color: rgba(255, 255, 255, 0.9); padding: 3rem; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
@@ -66,9 +66,9 @@
    .rw__item  .bar .graph .rw { width:80%; animation: progresRW 1s; }
 
 
-   /* 뚜레쥬르 진행바 style */
-   .tj__item .bar .graph .fill {background: #186b4f;}
-   .tj__item  .bar .graph .tj { width:50%; animation: progressTJ 1s; }
+   /* 삼성증권 진행바 style */
+   .ss__item .bar .graph .fill {background: #278AFF;}
+   .ss__item  .bar .graph .tj { width:50%; animation: progressTJ 1s; }
 
   dl dt {padding-bottom: 5px; font-size: 1.3rem; font-weight:600; letter-spacing: -2px;}
 
